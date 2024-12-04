@@ -1,5 +1,5 @@
 
-header{
+header {
     height: 15vh;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@ header{
     background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
 }
 
-.boxLogo{
+.boxLogo {
     width: 23vw;
     display: flex;
     color: white;
@@ -15,21 +15,23 @@ header{
     height: 14vh;
     justify-content: space-evenly;
 }
+
 .boxMenu {
     width: 35vw;
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        a {
-            color: white;
-            font-size: 20px;
-        }
-    }
 }
 
-.boxInput{
+.boxMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.boxMenu ul a {
+    color: white;
+    font-size: 20px;
+}
+
+.boxInput {
     width: 17vw;
     height: 6vh;
     margin-right: 20px;
@@ -37,14 +39,61 @@ header{
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
-    input{
-        background-color: transparent;
-        outline: none;
-        border: none;
-        color: white;
-        font-size: 15px;
-        &::placeholder{
-            color: white;
-        }
+}
+
+.boxInput input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.boxInput input::placeholder {
+    color: white;
+}
+
+@media (max-width: 1170px) {
+    .boxLogo {
+        border: solid 2px red;
+    }
+    
+    .boxLogo h1 {
+        font-size: 1.7vw;
+    }
+    
+    .boxLogo img {
+        width: 5vw;
+    }
+
+    .boxMenu {
+        border: solid 2px yellow;
+    }
+    
+    .boxMenu ul {
+        font-size: 1.6vw;
+    }
+
+    .boxSearch {
+        width: 20vw;
+    }
+    
+    .boxInput {
+        width: 16vw;
+    }
+    
+    .boxInput input::placeholder {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        height: 25vh;
+        flex-direction: column;
+    }
+
+    .boxSearch {
+        display: none;
     }
 }
