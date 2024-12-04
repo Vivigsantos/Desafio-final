@@ -53,47 +53,61 @@ header {
     color: white;
 }
 
-@media (max-width: 1170px) {
-    .boxLogo {
-        border: solid 2px red;
-    }
-    
-    .boxLogo h1 {
-        font-size: 1.7vw;
-    }
-    
-    .boxLogo img {
-        width: 5vw;
+@media(max-width: 1134px){
+
+    .boxLogo{
+
+        width: 25vw;
+        h1{
+            font-size: 1.9vw;
+        }
+        img{
+            width: 5vw;
+        }
     }
 
-    .boxMenu {
-        border: solid 2px yellow;
-    }
-    
-    .boxMenu ul {
-        font-size: 1.6vw;
+    .boxMenu{
+
+        ul{   
+            font-size: 1.7vw;
+        }
     }
 
-    .boxSearch {
-        width: 20vw;
+    .boxInput{
+        width: 18vw;
+        input{
+        &::placeholder{
+          font-size: 1.2vw;
+        }
     }
-    
-    .boxInput {
-        width: 16vw;
-    }
-    
-    .boxInput input::placeholder {
-        font-size: 1.3vw;
     }
 }
 
-@media (max-width: 760px) {
-    header {
+@media(max-width: 760px){
+    header{
         height: 25vh;
         flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .boxInput{
+        display: none;
+    }
+    .boxLogo{
+        width: 80%;
+
+        h1{
+            font-size: 25px;
+        }
+        img{
+            width: 60px;
+        }
     }
 
-    .boxSearch {
-        display: none;
+    .boxMenu{
+        width: 100%;
+        ul{
+            justify-content: space-evenly;
+            font-size: 22px;
+        }
     }
 }

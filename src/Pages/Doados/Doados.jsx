@@ -1,5 +1,5 @@
-import S from "./doados.module.scss"
-import livro from "../../assets/livro.png"
+import S from './doados.module.scss'
+import livro from '../../assets/livro.png'
 
 
 export default function Doados(){
@@ -9,11 +9,16 @@ export default function Doados(){
             <section className={S.boxcard}>
                 <article>
                     <img src={livro} alt="" />
-                    <h3></h3>
-                    <p>O Protagonista</p>
-                    <p>Suzane Andrade</p>
+                    <h3>O Protagonista</h3>
+                    <p>Susanne Andrade</p>
                     <p>Ficção</p>
                 </article>
+                <article>
+                    <img src={livro} alt="" />
+                    <h3>O Desafio</h3>
+                    <p>Susanne Andrade</p>
+                    <p>Ficção</p>
+                </article>   
             </section>
         </section>
     )

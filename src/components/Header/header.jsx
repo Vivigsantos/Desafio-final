@@ -6,31 +6,31 @@ import Doados from "../../Pages/Doados/Doados";
 import QueroDoar from "../../Pages/QueroDoar/QueroDoar";
 import S from "./header.module.scss"
 
-export default function Header() {
-  return (
-    <BrowserRouter>
+export default function header(){
+  return(
+      <BrowserRouter>
       <header>
-        <section className={S.boxLogo}>
-          <img src={logo} alt="Logo" />
+      <section className={S.boxLogo}>
+          <img src={logo} alt="imagem de um livro" />
           <h1>Livros Vai na Web</h1>
-        </section>
-        <nav className={S.boxMenu}>
+      </section>
+      <nav className={S.boxMenu}>
           <ul>
-            <li><Link to="/">Início</Link></li>
-            <li><Link to="/livros-doados">Livros Doados</Link></li>
-            <li><Link to="/quero-doar">Quero Doar</Link></li>
+              <li><Link to="/">Inicio</Link></li>
+              <li><Link to="/doados">Livros Doados</Link></li>
+              <li><Link to="/queroDoar">Quero Doar</Link></li>
           </ul>
-        </nav>
-        <div className={S.boxInput}>
-          <input  type="text" placeholder="O que você procura?"/>
-          <img src={busca} alt="Ícone de busca" />
-        </div>
-      </header>
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/livros-doados" element={<Doados />} />
-        <Route path="/quero-doar" element={<QueroDoar />} />
-      </Routes>
-    </BrowserRouter>
-  );
+      </nav>
+      <div className={S.boxInput}>  
+          <input type="text" placeholder="O que você procura?" />
+          <img src={busca} alt="" />            
+      </div>
+  </header>
+  <Routes>
+      <Route path="/" element={<Inicio/>}/>
+      <Route path="/doados" element={<Doados/>}/>
+      <Route path="/queroDoar" element={<QueroDoar/>}/>
+  </Routes>
+  </BrowserRouter>
+  )
 }

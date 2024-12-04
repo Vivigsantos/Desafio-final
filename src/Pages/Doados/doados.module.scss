@@ -1,16 +1,18 @@
 
 .boxDoados{
-    //border: solid 2px red;
+ 
     height: 70vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+
 .boxcard{
-    width: 85vw ;
+    width: 85vw;
     height: 60vh;
-    //border: solid 2px green;
+    display: flex;
+    justify-content: space-evenly;
     article{
         border: solid 2px #005695;
         width: 15vw;
@@ -20,5 +22,14 @@
         align-items: center;
         justify-content: space-evenly;
         border-radius: 15px;
+    }
+}
+
+@media(max-width:1000px){
+    .boxDoados{
+        border: solid 2px red;
+    }
+    .boxcard{
+        border: solid 2px orangered;
     }
 }
