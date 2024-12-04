@@ -25,11 +25,27 @@
     }
 }
 
-@media(max-width:1000px){
+@media(max-width: 1000px){
     .boxDoados{
-        border: solid 2px red;
+        justify-content: space-around;
+        
     }
-    .boxcard{
-        border: solid 2px orangered;
+    .boxBooks{
+        
+        article{
+            width: 200px;
+            height: 230px;
+        }
+    }
+}
+@media(max-width: 520px){
+    .boxBooks{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+    .boxDoados{
+        height: auto;
+        padding-bottom: 20px;
     }
 }
