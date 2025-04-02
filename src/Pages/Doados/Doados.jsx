@@ -15,7 +15,19 @@ export default function Doados(){
                 </article>
                 <article>
                     <img src={livro} alt="" />
-                    <h3>O Desafio</h3>
+                    <h3>O Protagonista</h3>
+                    <p>Susanne Andrade</p>
+                    <p>Ficção</p>
+                </article> 
+                <article>
+                    <img src={livro} alt="" />
+                    <h3>O Protagonista</h3>
+                    <p>Susanne Andrade</p>
+                    <p>Ficção</p>
+                </article>
+                <article>
+                    <img src={livro} alt="" />
+                    <h3>O Protagonista</h3>
                     <p>Susanne Andrade</p>
                     <p>Ficção</p>
                 </article>   
